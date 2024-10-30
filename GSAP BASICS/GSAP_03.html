@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: gilroy;
+            color: #fff;
+        }
+        html,
+        body{
+            height: 100%;
+            width: 100%;
+        }
+        body{
+            background-color: #111;
+        }
+        #box{
+            background-color: crimson;
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+        gsap.to("#box", {
+            x: 800,
+            duration: 2,
+            delay: 1,
+            repeat: -1, // repeat basically is used to repeat the element (-1 is used to repeat the element multiple times and  1 is used to repeat the element only once)
+            yoyo: true //  yoyo is used to reverse the animation
+
+        })
+    </script>
+</body>
+</html>
